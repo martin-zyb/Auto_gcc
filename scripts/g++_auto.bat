@@ -7,6 +7,10 @@ echo.
 
 set /p name=please enter the source file name (excluding the extension):
 
+if exist .\build\ (
+    rename build build_early
+)
+
 md build
 cd build
 
